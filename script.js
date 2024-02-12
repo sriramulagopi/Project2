@@ -219,8 +219,8 @@ let quizData = [
     },
     // more category...
 ];
-let topics = [];
 let list = [];
+let topics = [];
 const selectTopic = document.querySelectorAll(".topics>div");
 const div3 = document.querySelector(".div3");
 const quiz = document.querySelector(".quiz>button")
@@ -255,15 +255,15 @@ for (let i=0;i<selectTopic.length;i++){
 }
 const form1 = document.querySelector("form");
 quiz.addEventListener("click",()=>{
-    Name.innerText=prompt("Enter Your Name: ")
-    Name.style.border=" 4px solid green";
-    Name.style.color="green";
     if (topics.length>0){
         section1.style.display="none";
         display();
         startQuiz(topics);
+        Name.style.color="green";
+        Name.style.border=" 4px solid green";
+        Name.innerText=prompt("Enter Your Name: ")
+        form1.style.display="flex";
     }
-    form1.style.display="flex";
 })
 function startQuiz(topics){
     quizData.forEach((items)=>{
