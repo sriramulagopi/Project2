@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div><img src="./quiz1.png" alt=""></div>
+            <div>
+                <a href="">How it works?</a>
+                <a href="">Features</a>
+                <a href="">About us</a>
+                <button class="name">Login</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="div1">
+                <h1>Learn <br> new concepts <br> for each question</h1>
+                <div>We help you prepare for exams and quizes</div>
+                <button onclick="display()">Start solving</button>
+            </div>
+            <div class="div2">
+                <img src="./quiz2.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="div3">
+                <div class="div4">
+                    <div class="close" onclick="display()">&times;</div>
+                    <div>
+                        <h1>Choose your favorite topics</h1>
+                        <p>Select more than 5 topics to start quiz</p>
+                    </div>
+                    <div class="topics">
+                        <div>
+                            <span>General Knowledge</span>
+                            <span class="add">&times;</span>
+                        </div>
+                        <div>
+                            <span>Economy</span>
+                            <span class="add">&times;</span>
+
+                        </div>
+                        <div>
+                            <span>Resoning</span>
+                            <span class="add">&times;</span>
+
+                        </div>
+                        <div>
+                            <span>Aptitude</span>
+                            <span class="add">&times;</span>
+
+                        </div>
+                        <div>
+                            <span>Sports</span>
+                            <span class="add">&times;</span>
+
+                        </div>
+                        <div>
+                            <span>Chemistry</span>
+                            <span class="add">&times;</span>
+                        </div>
+                     <div class="quiz">
+                        <button>Start Quiz</button>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <form action="">
+                <div class="question"></div>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="option" id="A">
+                        <label for="A">sriramula gopi</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="option" id="B">
+                        <label for="B">sriramula gopi</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="option" id="C">
+                        <label for="C">sriramula gopi</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="option" id="D">
+                        <label for="D">sriramula gopi</label>
+                    </div>
+                </div>
+                <div class="buttons" id="impBtn1">
+                    <button type="button" onclick="previous()">Prev</button>
+                    <button type="button" onclick="next()">Next</button>
+                </div>
+                <div class="buttons" id="impBtn" style="display: none;">
+                    <button type="button"></button>
+                    <button>Restart Test</button>
+                </div>
+            </form>
+        </section>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
