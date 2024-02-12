@@ -320,9 +320,8 @@ function next(){
             impbtn1.children[1].innerText="Submit";
             impbtn1.style.display="none"
             impbtn.style.display="flex"
-            impbtn.children[0].innerText=`Your Score is ${score} out of ${finalAnwers.length*5}.`
-        })
-
+            impbtn.children[0].innerText=`${Name.innerText} your Score was ${score} out of ${finalAnwers.length*5}.`
+        });
     }
     else{
         index++;
